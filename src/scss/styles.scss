@@ -1,5 +1,8 @@
-@import 'modules/structure';
+@import 'base/structure';
 
 // Typography
-@import 'modules/fonts';
-@import 'modules/typography';
+@import 'base/fonts';
+@import 'base/typography';
+
+// Modules
+@import 'modules/header';
