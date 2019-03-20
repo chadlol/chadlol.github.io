@@ -76,7 +76,7 @@ nav {
     list-style-type: none; }
   nav .main-nav {
     list-style-type: none;
-    background: #FFF;
+    background: rgba(255, 255, 255, 0.85);
     border-bottom: solid 4px #FFF;
     overflow: hidden;
     height: 0;
@@ -135,7 +135,8 @@ nav {
     grid-row: 1 / 13;
     margin: 0 auto;
     max-width: 10rem;
-    transition: all 0.25s ease; }
+    transition: all 0.25s ease;
+    animation: fade-in 0.5s ease; }
     #header #title h1 {
       line-height: 2.8125rem;
       margin-bottom: 0.375rem; }
@@ -146,6 +147,46 @@ nav {
       font-size: 1.25rem;
       font-weight: 300;
       letter-spacing: 0.125rem; }
+    #header #title::before, #header #title::after {
+      content: '';
+      background-image: url("../images/left.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      left: -100%;
+      animation: slide-fade-in-left 4s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s forwards;
+      height: 80vh;
+      width: 100vw;
+      position: absolute;
+      z-index: -1; }
+
+@keyframes slide-fade-in-left {
+  from {
+    opacity: 0;
+    left: -50%; }
+  to {
+    opacity: 1;
+    left: -270px; } }
+    #header #title::after {
+      animation: slide-fade-in-right 4s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s forwards;
+      left: unset;
+      right: -100%;
+      background-image: url("../images/right.png"); }
+
+@keyframes slide-fade-in-right {
+  from {
+    opacity: 0;
+    right: -50%; }
+  to {
+    right: -250px; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    margin-bottom: 1em; }
+  to {
+    opacity: 1;
+    margin-bottom: 0; } }
   #header #scroll-down {
     font-size: 4rem;
     grid-column: 5 / 9;
