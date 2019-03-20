@@ -1,3 +1,40 @@
 #header {
+    display: grid;
     height:100vh;
+
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    #title {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+        grid-column: 3 / 7;
+        grid-row: 3 / 7;
+        
+        h1 {
+            line-height: 2.8125rem;
+            margin-bottom: 0.375rem;
+        }
+
+        hr {
+            border-top: solid 4px #000;
+            margin-bottom: 0.375rem;
+        }
+
+        span {
+            font-size: 1.25rem;
+            font-weight: 300;
+            letter-spacing: 0.125rem;
+        }
+    }
+
+    section:last-of-type {  // COPYRIGHT
+        display: flex;
+        align-items: center;
+
+        grid-column: 1 / 4;
+        grid-row: 8 / 9;
+    }
 }

@@ -12,20 +12,33 @@
 <body>
 
     <header id="header">
-        <nav>
-            <a href="#header">HOME</a>
-            <a href="#work">WORK</a>
-            <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT</a>
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars">NAV</i>
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#header" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="#work" class="nav-links">Products</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-links">About Us</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact Us</a>
+                </li>
+            </ul>
         </nav>
 
-        <section>
-            <div class="text-center">
+        <section id="title" class="text-center">
                 <h1>Chad Ohl</h1>
                 <hr>
-                <p>Web Design</p>
-            </div>
+                <span>Web Design</span>
+        </section>
 
+        <section>
             <h6>© Chad Ohl 2019</h6>
         </section>
     </header>
