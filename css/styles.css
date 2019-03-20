@@ -67,6 +67,7 @@ a {
 
 nav {
   position: fixed;
+  top: 0;
   height: 2.5rem;
   width: 100vw;
   z-index: 9999; }
@@ -142,7 +143,7 @@ nav {
       margin: 0 auto;
       margin-bottom: 1em;
       max-width: 10rem;
-      animation: fade-in 0.5s 0.25s ease forwards;
+      animation: fade-in 0.5s 0.5s ease forwards;
       opacity: 0; }
     #header #title h1 {
       line-height: 2.8125rem;
@@ -164,7 +165,7 @@ nav {
       position: absolute;
       z-index: -2; }
     #header #title::before {
-      animation: slide-fade-in-left 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s forwards;
+      animation: slide-fade-in-left 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
       left: -100%;
       background-image: url("../images/left.png"); }
 
@@ -176,7 +177,7 @@ nav {
     opacity: 1;
     left: -270px; } }
     #header #title::after {
-      animation: slide-fade-in-right 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s forwards;
+      animation: slide-fade-in-right 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
       right: -100%;
       background-image: url("../images/right.png"); }
 
