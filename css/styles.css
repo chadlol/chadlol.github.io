@@ -69,6 +69,9 @@ nav {
   position: fixed;
   height: 2.5rem;
   width: 100vw; }
+  @media screen and (min-width: 768px) {
+    nav {
+      padding-top: 3rem; } }
   nav ul {
     list-style-type: none; }
   nav .main-nav {
@@ -130,12 +133,9 @@ nav {
     justify-content: center;
     grid-column: 1 / 13;
     grid-row: 1 / 13;
-    margin: 0 5em;
+    margin: 0 auto;
+    max-width: 10rem;
     transition: all 0.25s ease; }
-    @media screen and (min-width: 768px) {
-      #header #title {
-        grid-column: 4 / 5;
-        grid-row: 3 / 7; } }
     #header #title h1 {
       line-height: 2.8125rem;
       margin-bottom: 0.375rem; }

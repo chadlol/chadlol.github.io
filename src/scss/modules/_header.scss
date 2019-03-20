@@ -12,12 +12,12 @@
         justify-content: center;
         grid-column: 1 / 13;
         grid-row: 1 / 13;
-        margin: 0 5em;
+        margin: 0 auto;
+        max-width: 10rem;
         transition: all 0.25s ease;
 
         @media screen and (min-width: 768px) {
-            grid-column: 4 / 5;
-            grid-row: 3 / 7;
+
         }
         
         h1 {
