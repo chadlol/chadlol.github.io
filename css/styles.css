@@ -150,6 +150,7 @@ nav {
       margin-bottom: 0.375rem; }
     #header #title hr {
       border-top: solid 4px #000;
+      border-style: solid;
       margin-bottom: 0.375rem; }
     #header #title span {
       font-size: 1.25rem;
