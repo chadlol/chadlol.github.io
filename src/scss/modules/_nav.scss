@@ -1,10 +1,7 @@
 nav {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-around;
-
-    grid-column: 1 / 9;
-    grid-row: 1 / 2;
+    position: fixed;
+    height: 2.5rem;
+    width: 100vw;
 
     ul {
         list-style-type: none;
@@ -12,16 +9,31 @@ nav {
 
     .main-nav {
         list-style-type: none;
-        // display: none;
+        background: #FFF;
+        border-bottom: solid 4px #FFF;
         overflow: hidden;
         height: 0;
-        transition: height 0.25s ease;
+        transition: all 0.25s ease;
 
         li {
             text-align: center;
             margin: 15px auto;
         }
     }
+
+    &.active {
+
+        .main-nav {
+            height: 13.4375rem;
+            border-bottom: solid 4px #000;
+        }
+
+        .fa:before {
+            content: "\f00d";
+            font-size: 2rem;
+        }
+    }
+
 
     .navbar-toggle {
         position: absolute;
@@ -30,6 +42,10 @@ nav {
         cursor: pointer; 
         color: rgba(255,255,255,0.8);
         font-size: 24px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     a {
@@ -37,10 +53,6 @@ nav {
         font-size: 1.5rem;
         text-decoration: none;
         text-transform: uppercase;
-    }
-
-    .active {
-        height: 13.4375rem;
     }
 
     .navbar-toggle {
@@ -63,5 +75,9 @@ nav {
         .navbar-toggle {
             display: none;
          }
+    }
+
+    &.active + #title{
+        margin-top: 30vh !important;
     }
 }

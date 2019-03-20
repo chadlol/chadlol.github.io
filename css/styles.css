@@ -66,18 +66,27 @@ a {
     transition: all 0.15s ease; }
 
 nav {
-  grid-column: 1 / 9;
-  grid-row: 1 / 2; }
+  position: fixed;
+  height: 2.5rem;
+  width: 100vw; }
   nav ul {
     list-style-type: none; }
   nav .main-nav {
     list-style-type: none;
+    background: #FFF;
+    border-bottom: solid 4px #FFF;
     overflow: hidden;
     height: 0;
-    transition: height 0.25s ease; }
+    transition: all 0.25s ease; }
     nav .main-nav li {
       text-align: center;
       margin: 15px auto; }
+  nav.active .main-nav {
+    height: 13.4375rem;
+    border-bottom: solid 4px #000; }
+  nav.active .fa:before {
+    content: "\f00d";
+    font-size: 2rem; }
   nav .navbar-toggle {
     position: absolute;
     top: 10px;
@@ -85,13 +94,13 @@ nav {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
     font-size: 24px; }
+    nav .navbar-toggle:hover {
+      cursor: pointer; }
   nav a {
     display: inline-block;
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase; }
-  nav .active {
-    height: 13.4375rem; }
   nav .navbar-toggle {
     color: #000; }
   @media screen and (min-width: 768px) {
@@ -107,18 +116,26 @@ nav {
         transition: all 0.25s ease; }
       nav .navbar-toggle {
         display: none; } }
+  nav.active + #title {
+    margin-top: 30vh !important; }
 
 #header {
   display: grid;
   height: 100vh;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr); }
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr); }
   #header #title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    grid-column: 3 / 7;
-    grid-row: 3 / 7; }
+    grid-column: 1 / 13;
+    grid-row: 1 / 13;
+    margin: 0 5em;
+    transition: all 0.25s ease; }
+    @media screen and (min-width: 768px) {
+      #header #title {
+        grid-column: 4 / 5;
+        grid-row: 3 / 7; } }
     #header #title h1 {
       line-height: 2.8125rem;
       margin-bottom: 0.375rem; }
@@ -129,11 +146,11 @@ nav {
       font-size: 1.25rem;
       font-weight: 300;
       letter-spacing: 0.125rem; }
-  #header section:last-of-type {
-    display: flex;
-    align-items: center;
-    grid-column: 1 / 4;
-    grid-row: 8 / 9; }
+  #header #scroll-down {
+    font-size: 4rem;
+    grid-column: 5 / 9;
+    grid-row: 12 / 13;
+    margin: 0 auto; }
 
 /*!
  * Font Awesome Free 5.8.0 by @fontawesome - https://fontawesome.com
