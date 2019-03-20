@@ -15,6 +15,11 @@ gulp.task('fonts', function(){
       .pipe(gulp.dest('./fonts'))
 });
 
+gulp.task('images', function(){
+  return gulp.src('src/images/*')
+    .pipe(gulp.dest('./images'))
+});
+
 gulp.task('sass', function(){
     return gulp.src('src/scss/styles.scss')
       .pipe(sass()) // Using gulp-sass
