@@ -32,6 +32,11 @@ gulp.task('js', function(){
     }))
 });
 
+gulp.task('icons', function() {
+  return gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
+      .pipe(gulp.dest('./webfonts/'));
+});
+
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
