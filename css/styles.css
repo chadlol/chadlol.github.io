@@ -254,24 +254,35 @@ nav {
 
 #work .work-highlight {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  padding: 6.25rem 0; }
+  padding: 3.125rem 0; }
+  @media screen and (min-width: 992px) {
+    #work .work-highlight {
+      padding: 6.25rem 0;
+      flex-direction: row; } }
   #work .work-highlight .image {
-    width: 50%; }
+    width: 100%; }
     #work .work-highlight .image img {
       width: 100%; }
   #work .work-highlight .description {
-    margin-left: 6.25rem;
-    width: 50%; }
+    text-align: center;
+    width: 100%; }
     #work .work-highlight .description h4 {
-      margin-bottom: 1rem; }
+      margin: 1rem 0; }
     #work .work-highlight .description p {
+      text-align: left;
       orphans: 0; }
-  #work .work-highlight:nth-child(odd) {
-    flex-direction: row-reverse; }
-    #work .work-highlight:nth-child(odd) .description {
-      margin-left: 0;
-      margin-right: 6.25rem; }
+    #work .work-highlight .description button {
+      text-align: center; }
+    @media screen and (min-width: 992px) {
+      #work .work-highlight .description {
+        margin-left: 6.25rem;
+        text-align: left; }
+        #work .work-highlight .description h4 {
+          margin: 0 0 1rem; }
+        #work .work-highlight .description button {
+          text-align: left; } }
 
 /*!
  * Font Awesome Free 5.8.0 by @fontawesome - https://fontawesome.com
