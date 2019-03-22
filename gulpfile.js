@@ -57,4 +57,4 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('src/**/*.js', ['js']); 
 });
 
-gulp.task('default', ['images', 'fonts', 'icons', 'watch']);
+gulp.task('default', [ 'html', 'images', 'fonts', 'icons', 'watch' ]);
