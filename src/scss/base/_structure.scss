@@ -23,6 +23,7 @@ button {
     border-radius: 2rem;
     margin: 1rem 0;
     border: solid 2px #000;
+    transition: all 0.15s ease;
 
     &:hover {
         color: #000;
