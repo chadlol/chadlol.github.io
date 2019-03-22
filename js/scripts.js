@@ -8,6 +8,8 @@ navBarToggle.addEventListener('click', function () {
     navBar.classList.toggle('active');
 });
 
+// JavaScript Resize funnction https://developer.mozilla.org/en-US/docs/Web/Events/resize
+
 const delay = 100;  // Your delay here
 
 const originalResize = evt => {
