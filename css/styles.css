@@ -6,6 +6,9 @@
 
 section {
   margin: 0 auto; }
+  main section {
+    padding: 4.6875rem 0;
+    max-width: 960px; }
 
 .text-center {
   text-align: center; }
@@ -169,15 +172,15 @@ nav {
         #header #title::before, #header #title::after {
           height: 65vh; } }
     #header #title::before {
-      animation: slide-fade-in-left-m 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
+      animation: slide-fade-in-left-mobile 1s 1s forwards;
       left: -75vw;
       background-image: url("../images/left.png"); }
       @media screen and (min-width: 768px) {
         #header #title::before {
           left: -100vw;
-          animation: slide-fade-in-left 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards; } }
+          animation: slide-fade-in-left 1s 1s forwards; } }
 
-@keyframes slide-fade-in-left-m {
+@keyframes slide-fade-in-left-mobile {
   from {
     opacity: 0;
     left: -75vw; }
@@ -193,19 +196,20 @@ nav {
     opacity: 1;
     left: -25vw; } }
     #header #title::after {
-      animation: slide-fade-in-right-m 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
+      animation: slide-fade-in-right-mobile 1s  1s forwards;
       right: -75vw;
       background-image: url("../images/right.png"); }
       @media screen and (min-width: 768px) {
         #header #title::after {
           right: -100vw;
-          animation: slide-fade-in-right 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards; } }
+          animation: slide-fade-in-right 1s  1s forwards; } }
 
-@keyframes slide-fade-in-right-m {
+@keyframes slide-fade-in-right-mobile {
   from {
     opacity: 0;
     right: -75vw; }
   to {
+    opacity: 1;
     right: -55vw; } }
 
 @keyframes slide-fade-in-right {
@@ -213,6 +217,7 @@ nav {
     opacity: 0;
     right: -30vw; }
   to {
+    opacity: 1;
     right: -25vw; } }
 
 @keyframes fade-in {
