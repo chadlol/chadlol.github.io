@@ -60,16 +60,16 @@
         }
 
         &::before {
-            animation: slide-fade-in-left-m 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
+            animation: slide-fade-in-left-mobile 1s 1s forwards;
             left: -75vw;
             background-image: url('../images/left.png');
 
             @media screen and (min-width: 768px) {
                 left: -100vw;
-                animation: slide-fade-in-left 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
+                animation: slide-fade-in-left 1s 1s forwards;
             }
 
-            @keyframes slide-fade-in-left-m {
+            @keyframes slide-fade-in-left-mobile {
                 from {
                     opacity: 0;
                     left: -75vw;
@@ -96,22 +96,23 @@
 
         &::after {
             // outline: solid 1px blue;
-            animation: slide-fade-in-right-m 2s cubic-bezier(0.075, 0.82, 0.165, 1)  1s forwards;
+            animation: slide-fade-in-right-mobile 1s  1s forwards;
             right: -75vw;
             background-image: url('../images/right.png');
 
             @media screen and (min-width: 768px) {
                 right: -100vw;
-                animation: slide-fade-in-right 2s cubic-bezier(0.075, 0.82, 0.165, 1)  1s forwards;
+                animation: slide-fade-in-right 1s  1s forwards;
             }
 
-            @keyframes slide-fade-in-right-m {
+            @keyframes slide-fade-in-right-mobile {
                 from {
                     opacity: 0;
                     right: -75vw;
                 }
 
                 to {
+                    opacity: 1;
                     right: -55vw;
                 }
             }
@@ -123,6 +124,7 @@
                 }
 
                 to {
+                    opacity: 1;
                     right: -25vw;
                 }
             }
