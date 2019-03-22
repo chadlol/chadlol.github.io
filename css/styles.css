@@ -92,7 +92,7 @@ nav {
     list-style-type: none; }
   nav .main-nav {
     list-style-type: none;
-    background: rgba(255, 255, 255, 0.85);
+    background: white;
     border-bottom: solid 4px #FFF;
     overflow: hidden;
     height: 0;
