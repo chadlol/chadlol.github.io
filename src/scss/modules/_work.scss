@@ -1,0 +1,37 @@
+#work {
+    .work-highlight {
+        display: flex;
+        align-items: flex-start;
+        padding: 6.25rem 0;
+
+        .image {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .description {
+            margin-left: 6.25rem;
+            width: 50%;
+
+            h4 {
+                margin-bottom: 1rem;
+            }
+
+            p {
+                orphans: 0;
+            }
+        }
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+
+            .description {
+                margin-left: 0;
+                margin-right: 6.25rem;
+            }
+        }
+    }
+}

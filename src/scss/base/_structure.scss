@@ -10,7 +10,23 @@ section {
 
     main & {
         padding: 4.6875rem 0;
-        max-width: 960px;
+        max-width: 66vw;
+    }
+}
+
+button {
+    display: inline-block;
+    font-size: 1rem;
+    background: #000;
+    color: #FFF;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    border: solid 2px #000;
+
+    &:hover {
+        color: #000;
+        background: #FFF;
     }
 }
 
