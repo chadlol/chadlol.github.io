@@ -260,7 +260,12 @@ nav {
   @media screen and (min-width: 992px) {
     #work .work-highlight {
       padding: 6.25rem 0;
-      flex-direction: row; } }
+      flex-direction: row; }
+      #work .work-highlight:nth-child(odd) {
+        flex-direction: row-reverse; }
+        #work .work-highlight:nth-child(odd) .description {
+          margin-left: 0;
+          margin-right: 6.25rem; } }
   #work .work-highlight .image {
     width: 100%; }
     #work .work-highlight .image img {

@@ -8,6 +8,15 @@
         @media screen and (min-width: 992px) {
             padding: 6.25rem 0;
             flex-direction: row;
+
+            &:nth-child(odd) {
+                flex-direction: row-reverse;
+    
+                .description {
+                    margin-left: 0;
+                    margin-right: 6.25rem;
+                }
+            }
         }
 
         .image {
@@ -48,14 +57,5 @@
                 }
             }
         }
-
-        // &:nth-child(odd) {
-        //     flex-direction: row-reverse;
-
-        //     .description {
-        //         margin-left: 0;
-        //         margin-right: 6.25rem;
-        //     }
-        // }
     }
 }
