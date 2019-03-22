@@ -88,9 +88,6 @@ nav {
   height: 2.5rem;
   width: 100vw;
   z-index: 9999; }
-  @media screen and (min-width: 768px) {
-    nav {
-      padding-top: 3rem; } }
   nav ul {
     list-style-type: none; }
   nav .main-nav {
@@ -103,6 +100,9 @@ nav {
     nav .main-nav li {
       text-align: center;
       margin: 15px auto; }
+    @media screen and (min-width: 768px) {
+      nav .main-nav {
+        padding-top: 3rem; } }
   nav.active .main-nav {
     height: 13.4375rem;
     border-bottom: solid 4px #000; }
