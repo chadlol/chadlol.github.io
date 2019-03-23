@@ -298,7 +298,11 @@ nav {
           margin-left: 0;
           margin-right: 6.25rem; } }
   #work .work-highlight .image {
-    width: 100%; }
+    max-width: 50%;
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      #work .work-highlight .image {
+        width: 40%; } }
     #work .work-highlight .image img {
       width: 100%; }
   #work .work-highlight .description {
