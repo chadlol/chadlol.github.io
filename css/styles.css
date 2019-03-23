@@ -51,6 +51,16 @@ input[type=submit] {
     .social-links {
       max-width: 40vw; } }
 
+::selection {
+  background: #333;
+  /* WebKit/Blink Browsers */
+  color: #FFF; }
+
+::-moz-selection {
+  background: #333;
+  /* Gecko Browsers */
+  color: #FFF; }
+
 .text-center {
   text-align: center; }
 

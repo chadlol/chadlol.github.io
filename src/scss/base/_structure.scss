@@ -68,6 +68,15 @@ input[type=submit] {
     }
 }
 
+::selection {
+    background: #333; /* WebKit/Blink Browsers */
+    color: #FFF;
+  }
+  ::-moz-selection {
+    background: #333; /* Gecko Browsers */
+    color: #FFF;
+  }
+
 // HELPER CLASSES
 
 .text-center {
