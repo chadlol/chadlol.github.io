@@ -4,9 +4,11 @@
   margin: 0;
   box-sizing: border-box; }
 
-section {
+section,
+footer {
   margin: 0 auto; }
-  main section {
+  main section, main
+  footer {
     padding: 4.6875rem 0;
     max-width: 66vw; }
 
@@ -26,6 +28,28 @@ input[type=submit] {
   input[type=submit]:hover {
     color: #000;
     background: #FFF; }
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2em auto 0;
+  max-width: 66vw; }
+  .social-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF; }
+    .social-links a:hover i {
+      color: #666; }
+  .social-links i {
+    font-size: 2.25rem;
+    transition: all 0.25s ease; }
+    @media screen and (min-width: 768px) {
+      .social-links i {
+        font-size: 4rem; } }
+  @media screen and (min-width: 768px) {
+    .social-links {
+      max-width: 40vw; } }
 
 .text-center {
   text-align: center; }
@@ -305,26 +329,6 @@ nav {
   @media screen and (max-width: 768px) {
     #work-social h2 {
       font-size: 1.125rem; } }
-  #work-social .social-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2em auto 0;
-    max-width: 66vw; }
-    @media screen and (min-width: 768px) {
-      #work-social .social-links {
-        max-width: 40vw; } }
-  #work-social a {
-    display: inline-block;
-    text-decoration: none;
-    color: #FFF; }
-    #work-social a:hover i {
-      color: #666; }
-  #work-social i {
-    font-size: 2.25rem; }
-    @media screen and (min-width: 768px) {
-      #work-social i {
-        font-size: 4rem; } }
 
 #about .chad-ohl {
   display: flex;
@@ -390,6 +394,24 @@ nav {
       position: absolute;
       z-index: -2;
       right: 50%; } }
+
+footer {
+  background: #000;
+  color: #FFF;
+  height: 14rem; }
+  @media screen and (min-width: 768px) {
+    footer {
+      height: 18.75rem; } }
+  footer > a {
+    font-size: 3rem;
+    transition: all 0.25s ease; }
+    footer > a:hover {
+      color: #FFF; }
+  footer h6 {
+    margin-top: 2rem; }
+    @media screen and (min-width: 768px) {
+      footer h6 {
+        margin-top: 4rem; } }
 
 /*!
  * Font Awesome Free 5.8.0 by @fontawesome - https://fontawesome.com

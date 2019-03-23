@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-section {
+section,
+footer {
     margin: 0 auto;
 
     main & {
@@ -30,6 +31,40 @@ input[type=submit] {
     &:hover {
         color: #000;
         background: #FFF;
+    }
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em auto 0;
+    max-width: 66vw;
+
+    a {
+        display: inline-block;
+        text-decoration: none; 
+        color: #FFF;
+
+
+        &:hover i {
+            color: #666;
+
+        }
+    }
+
+    i {
+        font-size:2.25rem;
+        transition: all 0.25s ease;
+
+        @media screen and (min-width: 768px) {
+            font-size:4rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 40vw;
     }
 }
 
