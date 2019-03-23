@@ -323,6 +323,30 @@ nav {
       #work-social i {
         font-size: 4rem; } }
 
+#about .chad-ohl {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 3.125rem; }
+  #about .chad-ohl h2 {
+    text-transform: capitalize;
+    margin-top: 1rem; }
+  #about .chad-ohl p {
+    padding: 1rem 0; }
+  #about .chad-ohl .copy {
+    width: 100%; }
+  #about .chad-ohl .portrait img {
+    width: 100%; }
+  @media screen and (min-width: 992px) {
+    #about .chad-ohl {
+      flex-direction: row; }
+      #about .chad-ohl h2 {
+        margin-top: 0; }
+      #about .chad-ohl .copy {
+        width: 60%;
+        padding-right: 6.25rem; }
+      #about .chad-ohl .portrait {
+        width: 40%; } }
+
 /*!
  * Font Awesome Free 5.8.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

@@ -1,3 +1,45 @@
 #about {
+
+    .chad-ohl {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3.125rem;
+
+        h2 {
+            text-transform: capitalize;
+            margin-top: 1rem;
+        }
+
+        p {
+            padding: 1rem 0;
+        }
+
+        .copy {
+            width: 100%;
+        }
+
+        .portrait {
+            img {
+                width: 100%;
+            }
+        }
+
+
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+
+            h2 {
+                margin-top: 0;
+            }
+
+            .copy {
+                width: 60%;
+                padding-right: 6.25rem;
+            }
     
+            .portrait {
+                 width: 40%;
+            }
+        }
+    }
 }
