@@ -1,0 +1,49 @@
+#work-social {
+    background: #000;
+    color: #FFF;
+
+    @media screen and (min-width: 768px) {
+        height: 18.75rem;
+    }
+
+    h2 {
+        
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.125rem;
+        }
+        
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2em auto 0;
+        max-width: 66vw;
+
+        @media screen and (min-width: 768px) {
+            max-width: 40vw;
+        }
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none; 
+        color: #FFF;
+
+        &:hover i {
+            color: #666;
+        }
+    }
+
+    i {
+        font-size:2.25rem;
+
+        @media screen and (min-width: 768px) {
+            font-size:4rem;
+        }
+    }
+
+
+}

@@ -27,6 +27,10 @@ button {
 .text-center {
   text-align: center; }
 
+.full-width {
+  width: 100vw;
+  max-width: 100vw; }
+
 html {
   font-size: 16px;
   font-family: 'Heebo', sans-serif; }
@@ -288,6 +292,36 @@ nav {
           margin: 0 0 1rem; }
         #work .work-highlight .description button {
           text-align: left; } }
+
+#work-social {
+  background: #000;
+  color: #FFF; }
+  @media screen and (min-width: 768px) {
+    #work-social {
+      height: 18.75rem; } }
+  @media screen and (max-width: 768px) {
+    #work-social h2 {
+      font-size: 1.125rem; } }
+  #work-social .social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em auto 0;
+    max-width: 66vw; }
+    @media screen and (min-width: 768px) {
+      #work-social .social-links {
+        max-width: 40vw; } }
+  #work-social a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF; }
+    #work-social a:hover i {
+      color: #666; }
+  #work-social i {
+    font-size: 2.25rem; }
+    @media screen and (min-width: 768px) {
+      #work-social i {
+        font-size: 4rem; } }
 
 /*!
  * Font Awesome Free 5.8.0 by @fontawesome - https://fontawesome.com
