@@ -14,7 +14,8 @@ section {
     }
 }
 
-button {
+button,
+input[type=submit] {
     display: inline-block;
     font-size: 1rem;
     background: #000;
@@ -24,6 +25,7 @@ button {
     margin: 1rem 0;
     border: solid 2px #000;
     transition: all 0.15s ease;
+    cursor: pointer;
 
     &:hover {
         color: #000;

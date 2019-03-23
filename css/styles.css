@@ -10,7 +10,8 @@ section {
     padding: 4.6875rem 0;
     max-width: 66vw; }
 
-button {
+button,
+input[type=submit] {
   display: inline-block;
   font-size: 1rem;
   background: #000;
@@ -19,8 +20,10 @@ button {
   border-radius: 2rem;
   margin: 1rem 0;
   border: solid 2px #000;
-  transition: all 0.15s ease; }
-  button:hover {
+  transition: all 0.15s ease;
+  cursor: pointer; }
+  button:hover,
+  input[type=submit]:hover {
     color: #000;
     background: #FFF; }
 
@@ -63,8 +66,8 @@ h4 {
 h5 {
   font-size: 0.75rem; }
 
-span.sub-header {
-  font-weight: 400;
+div.sub-header {
+  font-weight: 300;
   padding-bottom: 1rem; }
 
 a {
@@ -346,6 +349,46 @@ nav {
         padding-right: 6.25rem; }
       #about .chad-ohl .portrait {
         width: 40%; } }
+
+#contact form {
+  padding-top: 3.125rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 992px) {
+    #contact form {
+      width: 40vw; } }
+  #contact form input,
+  #contact form textarea {
+    font-size: 1rem;
+    margin-bottom: 1rem; }
+  #contact form textarea {
+    border: none;
+    border-bottom: solid 2px #000; }
+  #contact form input[type=text],
+  #contact form input[type=email] {
+    -webkit-appearance: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    height: 2.5rem;
+    box-shadow: none;
+    border: none;
+    border-bottom: solid 2px #000; }
+
+#contact::before {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    #contact::before {
+      display: inline-block;
+      content: '';
+      background-image: url("../images/contact.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 80vh;
+      width: 80vw;
+      position: absolute;
+      z-index: -2; } }
 
 /*!
  * Font Awesome Free 5.8.0 by @fontawesome - https://fontawesome.com
