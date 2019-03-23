@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin');
 
 gulp.task('html', function(){
     return gulp.src('src/*.html')
@@ -17,7 +18,9 @@ gulp.task('fonts', function(){
 
 gulp.task('images', function(){
   return gulp.src('src/images/*')
+    .pipe(imagemin())
     .pipe(gulp.dest('./images'))
+    
 });
 
 gulp.task('sass', function(){
