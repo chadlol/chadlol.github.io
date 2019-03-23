@@ -388,7 +388,8 @@ nav {
       height: 80vh;
       width: 80vw;
       position: absolute;
-      z-index: -2; } }
+      z-index: -2;
+      right: 50%; } }
 
 /*!
  * Font Awesome Free 5.8.0 by @fontawesome - https://fontawesome.com
