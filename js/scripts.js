@@ -31,3 +31,7 @@ const originalResize = evt => {
     }, delay);
   });
 })();
+
+$('.nav-links').click(function(){
+    navBar.classList.remove('active');
+});
