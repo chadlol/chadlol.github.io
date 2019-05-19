@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/chadlol/chadlol.github.io#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.0",
-    "browser-sync": "^2.26.3",
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "browser-sync": "^2.26.5",
     "gulp": "3.9.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-sass": "^4.0.2"
