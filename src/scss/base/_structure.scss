@@ -5,14 +5,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 99px; /* height of sticky header */
+}
+
 section,
 footer {
     margin: 0 auto;
+}
 
-    main & {
-        padding: 4.6875rem 0;
-        max-width: 66vw;
-    }
+main {
+    padding: 4.6875rem 16.6667%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 button,

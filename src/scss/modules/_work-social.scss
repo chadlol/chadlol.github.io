@@ -1,6 +1,19 @@
 #work-social {
     background: #000;
     color: #FFF;
+    // width: 100vw;
+    // max-width: unse;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .social-links {
+        width: 33.3334%;
+        display: flex;
+        justify-content: space-between;
+    }
+
 
     @media screen and (min-width: 768px) {
         height: 18.75rem;

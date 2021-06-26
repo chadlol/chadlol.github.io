@@ -4,13 +4,18 @@
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-padding-top: 99px;
+  /* height of sticky header */ }
+
 section,
 footer {
   margin: 0 auto; }
-  main section, main
-  footer {
-    padding: 4.6875rem 0;
-    max-width: 66vw; }
+
+main {
+  padding: 4.6875rem 16.6667%;
+  max-width: 1440px;
+  margin: 0 auto; }
 
 button,
 input[type=submit] {
@@ -124,9 +129,9 @@ a {
     transition: all 0.15s ease; }
 
 nav {
+  background: white;
   position: fixed;
   top: 0;
-  height: 2.5rem;
   width: 100vw;
   z-index: 9999; }
   nav ul {
@@ -141,9 +146,6 @@ nav {
     nav .main-nav li {
       text-align: center;
       margin: 15px auto; }
-    @media screen and (min-width: 768px) {
-      nav .main-nav {
-        padding-top: 3rem; } }
   nav.active .main-nav {
     height: 13.4375rem;
     border-bottom: solid 4px #000; }
@@ -166,21 +168,23 @@ nav {
     text-transform: uppercase; }
   nav .navbar-toggle {
     color: #000; }
+  nav.active + #title {
+    margin-top: 30vh !important; }
   @media screen and (min-width: 768px) {
     nav {
+      height: auto;
       display: flex;
       align-items: center;
       justify-content: space-around; }
       nav .main-nav {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 600px;
         height: initial;
-        transition: all 0.25s ease; }
+        transition: all 0.25s ease;
+        margin-top: 2rem; }
       nav .navbar-toggle {
         display: none; } }
-  nav.active + #title {
-    margin-top: 30vh !important; }
 
 #header {
   display: grid;
@@ -336,7 +340,14 @@ nav {
 
 #work-social {
   background: #000;
-  color: #FFF; }
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #work-social .social-links {
+    width: 33.3334%;
+    display: flex;
+    justify-content: space-between; }
   @media screen and (min-width: 768px) {
     #work-social {
       height: 18.75rem; } }
@@ -368,51 +379,40 @@ nav {
       #about .chad-ohl .portrait {
         width: 40%; } }
 
-#contact form {
-  padding-top: 3.125rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column; }
-  @media screen and (min-width: 992px) {
-    #contact form {
-      width: 40vw; } }
-  #contact form input,
-  #contact form textarea {
-    font-size: 1rem;
-    margin-bottom: 1rem; }
-  #contact form textarea {
-    border: none;
-    border-bottom: solid 2px #000; }
-  #contact form input[type=text],
-  #contact form input[type=email] {
-    -webkit-appearance: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    height: 2.5rem;
-    box-shadow: none;
-    border: none;
-    border-bottom: solid 2px #000; }
-
-#contact::before {
-  display: none; }
-  @media screen and (min-width: 992px) {
-    #contact::before {
-      display: inline-block;
-      content: '';
-      background-image: url("../images/contact.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 80vh;
-      width: 80vw;
-      position: absolute;
-      z-index: -2;
-      right: 50%; } }
+#contact {
+  position: relative; }
+  #contact form {
+    padding-top: 3.125rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 992px) {
+      #contact form {
+        width: 40vw; } }
+    #contact form input,
+    #contact form textarea {
+      font-size: 1rem;
+      margin-bottom: 1rem; }
+    #contact form textarea {
+      border: none;
+      border-bottom: solid 2px #000; }
+    #contact form input[type=text],
+    #contact form input[type=email] {
+      -webkit-appearance: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+      height: 2.5rem;
+      box-shadow: none;
+      border: none;
+      border-bottom: solid 2px #000; }
+  #contact::before {
+    display: none; }
 
 footer {
   background: #000;
   color: #FFF;
-  height: 14rem; }
+  height: 14rem;
+  max-width: unset; }
   @media screen and (min-width: 768px) {
     footer {
       height: 18.75rem; } }

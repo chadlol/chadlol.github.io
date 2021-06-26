@@ -1,4 +1,6 @@
 #contact {
+    position: relative;
+    
     form {
         padding-top: 3.125rem;
         margin: 0 auto;
@@ -34,21 +36,19 @@
 
     &::before {
         display: none;
-        
-
 
         @media screen and (min-width: 992px) {
-            display: inline-block;
-            content: '';
-            background-image: url('../images/contact.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 80vh;
-            width: 80vw;
-            position: absolute;
-            z-index: -2;
-            right: 50%;
+            // display: inline-block;
+            // content: '';
+            // background-image: url('../images/contact.png');
+            // background-size: contain;
+            // background-repeat: no-repeat;
+            // background-position: top left;
+            // height: 80vh;
+            // width: 80vw;
+            // position: absolute;
+            // z-index: -2;
+            // right: 50%;
         }
     }
 }

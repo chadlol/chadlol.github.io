@@ -1,7 +1,8 @@
 nav {
+    background: rgba(255,255,255, 1);
     position: fixed;
     top: 0;
-    height: 2.5rem;
+    // height: 2.5rem;
     width: 100vw;
     z-index: 9999;
 
@@ -22,10 +23,6 @@ nav {
             margin: 15px auto;
         }
 
-        @media screen and (min-width: 768px) {
-            padding-top: 3rem;
-        }
-        
     }
 
     &.active {
@@ -66,7 +63,13 @@ nav {
         color: #000;
     }
 
+    &.active + #title{
+        margin-top: 30vh !important;
+    }
+
     @media screen and (min-width: 768px) {
+        height: auto;
+
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -74,17 +77,14 @@ nav {
         .main-nav {
             display: flex;
             flex-direction: row;
-            width: 100%;
+            width: 600px;
             height: initial;
             transition: all 0.25s ease;
+            margin-top: 2rem;
         }
 
         .navbar-toggle {
             display: none;
          }
-    }
-
-    &.active + #title{
-        margin-top: 30vh !important;
     }
 }

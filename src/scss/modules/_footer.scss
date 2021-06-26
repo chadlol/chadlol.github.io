@@ -2,6 +2,7 @@ footer {
     background: #000;
     color: #FFF;
     height: 14rem;
+    max-width: unset;
 
     @media screen and (min-width: 768px) {
         height: 18.75rem;
