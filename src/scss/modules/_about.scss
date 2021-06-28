@@ -19,13 +19,17 @@
         }
 
         .portrait {
+            display:flex;
+            justify-content: center;
+
             img {
                 width: 100%;
+                margin-bottom: 1rem;
             }
         }
 
 
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 1200px) {
             flex-direction: row;
 
             h2 {
@@ -33,12 +37,13 @@
             }
 
             .copy {
-                width: 60%;
-                padding-right: 6.25rem;
+                width: 50%;
+                padding-right: 3rem;
             }
     
             .portrait {
-                 width: 40%;
+                display: inline-block;
+                 width: 50%;
             }
         }
     }

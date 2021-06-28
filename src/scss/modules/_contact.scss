@@ -8,13 +8,22 @@
         flex-direction: column;
 
         @media screen and (min-width: 992px) {
-            width: 40vw;
+            max-width: 35rem;;
         }
 
         input,
         textarea{
             font-size: 1rem;   
             margin-bottom: 1rem;
+            transition: all 0.25s ease;
+
+            &:focus {
+                border: solid 2px black;
+                outline: none;
+                padding-left: 1rem;
+            }
+
+
         }
 
         textarea {
@@ -31,6 +40,10 @@
             box-shadow: none;
             border: none;
             border-bottom: solid 2px #000;
+            &:focus {
+                border: solid 2px black;
+                outline: none;
+            }
         }
     }
 

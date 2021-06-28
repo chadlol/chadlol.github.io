@@ -22,19 +22,23 @@ nav {
             text-align: center;
             margin: 15px auto;
         }
+        
+        a {
+            font-size: 4rem;
+        }
 
     }
 
     &.active {
 
         .main-nav {
-            height: 13.4375rem;
+            height: 33vh;
             border-bottom: solid 4px #000;
         }
 
         .fa:before {
             content: "\f00d";
-            font-size: 2rem;
+            font-size: 4rem;
         }
     }
 
@@ -42,10 +46,10 @@ nav {
     .navbar-toggle {
         position: absolute;
         top: 10px;
-        right: 20px;
+        right: 2rem;
         cursor: pointer; 
         color: rgba(255,255,255,0.8);
-        font-size: 24px;
+        font-size: 4rem;
 
         &:hover {
             cursor: pointer;
@@ -78,9 +82,13 @@ nav {
             display: flex;
             flex-direction: row;
             width: 600px;
-            height: initial;
+            height: 13.4375rem;
             transition: all 0.25s ease;
             margin-top: 2rem;
+
+            a {
+                font-size: 1.5rem;
+            }
         }
 
         .navbar-toggle {

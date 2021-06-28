@@ -3,7 +3,6 @@ html {
     font-family: 'Heebo', sans-serif;
 }
 
-
 h1,
 h2 {
     font-weight: 900;
@@ -30,8 +29,8 @@ h3 {
 h4 {
     font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: 0.234375rem;
-    text-decoration: underline;
+    letter-spacing: 0.15rem;
+    // text-decoration: underline;
 }
 
 h5 {
@@ -42,10 +41,15 @@ div.sub-header {
     font-weight: 300;
     padding-bottom: 1rem;
 }
+textarea {
+    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+}
 
 a {
     color: #999;
     position: relative;
+    text-decoration: none;
 
     &:hover {
         color: #000;
