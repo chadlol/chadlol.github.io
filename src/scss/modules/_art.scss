@@ -1,0 +1,37 @@
+#art {
+
+    h4 {
+        margin-bottom: 4rem;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & > img,
+        & > video {
+            margin-bottom: 3rem;
+        }
+    }
+
+    img {
+        // border: solid 1px black;
+    }
+
+
+    div {
+        padding-bottom: 3rem;
+        width: 100%; 
+        height: auto;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+        @media screen and (min-width: 1200px) {
+            width: calc(50% - 1.75rem); 
+            // min-width: 480px;
+        }
+    }
+}

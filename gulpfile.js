@@ -16,10 +16,10 @@ gulp.task('fonts', function(){
       .pipe(gulp.dest('./fonts'))
 });
 
-gulp.task('images', function(){
-  return gulp.src('src/images/**/*')
+gulp.task('assets', function(){
+  return gulp.src('src/assets/**/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./images'))
+    .pipe(gulp.dest('./assets'))
     
 });
 
@@ -60,6 +60,6 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('src/**/*.js', ['js']); 
 });
 
-gulp.task('dev', [ 'html', 'js', 'images', 'fonts', 'icons', 'watch']);
+gulp.task('dev', [ 'html', 'js', 'assets', 'fonts', 'icons', 'watch']);
 
-gulp.task('default', [ 'html', 'sass', 'js', 'images', 'fonts', 'icons' ]);
+gulp.task('default', [ 'html', 'sass', 'js', 'assets', 'fonts', 'icons' ]);

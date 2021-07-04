@@ -9,6 +9,8 @@ html {
     scroll-padding-top: 99px; /* height of sticky header */
 }
 
+
+
 section,
 footer {
     margin: 0 auto;
@@ -21,6 +23,11 @@ main {
 .container {
     padding: 1rem 0;
     max-width: 1200px;
+
+    img,
+    video {
+        width: 100%;
+    }
 
     @media screen and (min-width: 768px) {
         padding: 2rem 0; 
