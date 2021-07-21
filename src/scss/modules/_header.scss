@@ -1,17 +1,127 @@
 #header {
     display: grid;
     height:100vh;
-
+    overflow: hidden;
+    position: relative;
 
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
+
+    &::before,
+    &::after {
+        content: '';
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 80vh;
+        // max-height: 740px;
+        width: 70vw;
+        position: absolute;
+        // z-index: -2;
+        // margin-top: 5rem;
+
+        // @media screen and (min-width: 768px) {
+        //     // height: 65vh;
+        //     width: 65vw;
+        // }
+
+        @media screen and (min-width: 1200px) {
+            // height: 65vh;
+            width: 40vw;
+        }
+    }
+
+    &::before {
+        animation: slide-fade-in-left-mobile 1s 1s forwards;
+        left: -75vw;
+        background-image: url('../assets/left.png');
+        background-position: center right;
+
+        @media screen and (min-width: 1200px) {
+            left: -100vw;
+            animation: slide-fade-in-left 1s 1s forwards;
+        }
+
+        @keyframes slide-fade-in-left-mobile {
+            from {
+                opacity: 0;
+                left: -75vw;
+            }
+
+            to {
+                opacity: 1;
+                left: -55vw;
+            }
+        }
+
+        @keyframes slide-fade-in-left {
+            from {
+                opacity: 0;
+                left: -30vw;
+            }
+
+            to {
+                opacity: 1;
+                left: -25vw;
+            }
+        }
+    }
+
+    &::after {
+        // outline: solid 1px blue;
+        animation: slide-fade-in-right-mobile 1s  1s forwards;
+        right: -75vw;
+        background-image: url('../assets/right.png');
+        background-position: center left;
+
+        @media screen and (min-width: 1200px) {
+            right: -100vw;
+            animation: slide-fade-in-right 1s  1s forwards;
+        }
+
+        @keyframes slide-fade-in-right-mobile {
+            from {
+                opacity: 0;
+                right: -75vw;
+            }
+
+            to {
+                opacity: 1;
+                right: -55vw;
+            }
+        }
+
+        @keyframes slide-fade-in-right {
+            from {
+                opacity: 0;
+                right: -30vw;
+            }
+
+            to {
+                opacity: 1;
+                right: -25vw;
+            }
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            margin-bottom: 1em;
+        }
+
+        to {
+            opacity: 1;
+            margin-bottom: 0;
+        }
+    }
 
     #title {
         display:flex;
         flex-direction: column;
         justify-content: center;
         grid-column: 1 / 13;
-        grid-row: 1 / 13;
+        grid-row: 1 / 10;
         width: 100%;
         overflow: hidden;
         position: relative;
@@ -63,117 +173,16 @@
             font-weight: 300;
             letter-spacing: 0.125rem;
         }
-
-        &::before,
-        &::after {
-            content: '';
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 80vh;
-            // max-height: 740px;
-            width: 80vw;
-            position: absolute;
-            z-index: -2;
-            mix-blend-mode: overlay;
-
-            @media screen and (min-width: 1200px) {
-                // height: 65vh;
-                width: 45vw;
-            }
-        }
-
-        &::before {
-            animation: slide-fade-in-left-mobile 1s 1s forwards;
-            left: -75vw;
-            background-image: url('../assets/left.png');
-
-            @media screen and (min-width: 1200px) {
-                left: -100vw;
-                animation: slide-fade-in-left 1s 1s forwards;
-            }
-
-            @keyframes slide-fade-in-left-mobile {
-                from {
-                    opacity: 0;
-                    left: -75vw;
-                }
-
-                to {
-                    opacity: 1;
-                    left: -55vw;
-                }
-            }
-
-            @keyframes slide-fade-in-left {
-                from {
-                    opacity: 0;
-                    left: -30vw;
-                }
-
-                to {
-                    opacity: 1;
-                    left: -25vw;
-                }
-            }
-        }
-
-        &::after {
-            // outline: solid 1px blue;
-            animation: slide-fade-in-right-mobile 1s  1s forwards;
-            right: -75vw;
-            background-image: url('../assets/right.png');
-
-            @media screen and (min-width: 1200px) {
-                right: -100vw;
-                animation: slide-fade-in-right 1s  1s forwards;
-            }
-
-            @keyframes slide-fade-in-right-mobile {
-                from {
-                    opacity: 0;
-                    right: -75vw;
-                }
-
-                to {
-                    opacity: 1;
-                    right: -55vw;
-                }
-            }
-
-            @keyframes slide-fade-in-right {
-                from {
-                    opacity: 0;
-                    right: -30vw;
-                }
-
-                to {
-                    opacity: 1;
-                    right: -25vw;
-                }
-            }
-        }
-
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-                margin-bottom: 1em;
-            }
-
-            to {
-                opacity: 1;
-                margin-bottom: 0;
-            }
-        }
     }
 
     #scroll-down {
-        font-size: 4rem;
+        font-size: 2rem;
         grid-column: 5 / 9;
         grid-row: 11 / 12;
         margin: 0 auto;
         transition: all 0.25s ease;
-
+        color: rgba(0, 0, 0, 0.1);
+ 
         &:hover {
             color: #000;
             

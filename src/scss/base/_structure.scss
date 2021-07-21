@@ -9,8 +9,6 @@ html {
     scroll-padding-top: 99px; /* height of sticky header */
 }
 
-
-
 section,
 footer {
     margin: 0 auto;
@@ -50,7 +48,7 @@ input[type=submit] {
     margin: 1rem 0;
     border: solid 2px #000;
     transition: all 0.15s ease;
-    cursor: pointer;
+    // cursor: pointer;
     
     &:hover {
         color: #FFF;
@@ -100,20 +98,3 @@ input[type=submit] {
     background: #333; /* Gecko Browsers */
     color: #FFF;
   }
-
-// HELPER CLASSES
-
-.text-center {
-    text-align: center;
-}
-
-.full-width {
-    width: 100vw;
-    max-width: 100vw;
-}
-
-hr {
-    width: 25%;
-    margin: 0 auto;
-    opacity: 10%;
-}

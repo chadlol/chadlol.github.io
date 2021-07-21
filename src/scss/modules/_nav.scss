@@ -1,9 +1,10 @@
 nav {
     background: rgba(255,255,255, 1);
-    position: fixed;
+    // border-bottom: solid 4px rgba(0,0,0, 0.1);
+    position: sticky;
     top: 0;
     // height: 2.5rem;
-    width: 100vw;
+    // width: 100vw;
     z-index: 9999;
 
     ul {
@@ -11,29 +12,44 @@ nav {
     }
 
     .main-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         list-style-type: none;
         background: rgba(255,255,255, 1);
-        border-bottom: solid 4px #FFF;
         overflow: hidden;
         height: 0;
         transition: all 0.25s ease;
+        position: relative;
 
-        li {
-            text-align: center;
-            margin: 15px auto;
+        .nav-link-inner {
+            font-size: 0.75rem;
         }
-        
-        a {
-            font-size: 4rem;
+
+        ul {
+            margin-top:0.25rem;
+            position: absolute;
+            left: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            transition: opacity 0.25s ease;
+            opacity: 0;
+            width: 26rem;
+            // height:0;
+            // overflow: hidden;
         }
 
     }
 
+
+
     &.active {
 
+        border-bottom: solid 4px #000;
+
         .main-nav {
-            height: 33vh;
-            border-bottom: solid 4px #000;
+            height: 50vh;
         }
 
         .fa:before {
@@ -48,10 +64,14 @@ nav {
         top: 10px;
         right: 2rem;
         cursor: pointer; 
-        color: rgba(255,255,255,0.8);
+        color: #000;
+        opacity: 0.5;
         font-size: 4rem;
+        transition: all 0.25s ease;
+        z-index: 9999;
 
         &:hover {
+            opacity: 1;
             cursor: pointer;
         }
     }
@@ -61,10 +81,6 @@ nav {
         font-size: 1.5rem;
         text-decoration: none;
         text-transform: uppercase;
-    }
-
-    .navbar-toggle {
-        color: #000;
     }
 
     &.active + #title{
@@ -84,11 +100,21 @@ nav {
             width: 600px;
             height: auto;
             transition: all 0.25s ease;
-            margin-top: 2rem;
+            padding: 1.25rem 0 1rem 0;
 
             a {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
             }
+
+            ul {
+                // transition: opacity 0.25s ease;
+                
+            }
+
+            // li:hover a:hover + ul {
+            //     opacity: 1;
+            //     height: 2rem;
+            // }
         }
 
         .navbar-toggle {

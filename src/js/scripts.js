@@ -34,6 +34,6 @@ const originalResize = evt => {
 
 // Closes mobile nav when nav item is clicked
 
-$('.nav-links').click(function(){
+$('.nav-link').click(function(){
     navBar.classList.remove('active');
 });

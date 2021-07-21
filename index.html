@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,45 +14,52 @@
 
     <title>Chad Ohl Web Design</title>
 
-    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
+
 <body>
 
+    <nav id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-link"><b>Chad Ohl</b></a>
+            </li>
+            <li>
+                <a href="#work" class="nav-link">Work</a>
+                <!-- <ul>
+                    <li><a href="#work" class="nav-link-inner">Highlights</a></li>
+                    <li><a href="#code" class="nav-link-inner">Code Samples</a></li>
+                    <li><a href="#ux" class="nav-link-inner">UX Process + Writing</a></li>
+                    <li><a href="#art" class="nav-link-inner">Art + Design</a></li>
+                </ul> -->
+            </li>
+            <li>
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <header id="header">
 
-        <nav id="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fa fa-bars"></i>
-            </span>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="#header" class="nav-links"><b>Chad Ohl</b></a>
-                </li>
-                <li>
-                    <a href="#work" class="nav-links">Work</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-links">About</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-links">Contact</a>
-                </li>
-            </ul>
-        </nav>
 
         <section id="title" class="text-center">
             <div>
                 <video autoplay loop>
 
-                    <source src="assets/ohl-logo.mp4"
-                    type="video/mp4">
-                
+                    <source src="./assets/ohl-logo.mp4" type="video/mp4">
+
                     Sorry, your browser doesn't support embedded videos.
                 </video>
-                
+
                 <h1>Chad Ohl</h1>
                 <hr>
                 <span>Designer + Developer</span>
@@ -68,28 +76,78 @@
 
             <article class="work-highlight">
                 <div>
-                    <a class="image" data-featherlight="assets/ewu-redesign.png" >
-                        <img data-aos="fade-right" data-aos-duration="1000" src="assets/ewu-redesign.png" alt="EWU.EDU Redesign">
-                    </a>
+                    <div class="image-wrap" data-featherlight="./assets/blinkux/Blink-Logo.png">
+                        <img data-aos="fade-in" data-aos-duration="1000" src="./assets/blinkux/Blink-Logo.png" alt="">
+                    </div>
                     <section>
-                        <a class="image" data-featherlight="assets/ewu-redesign.png" >
-                            <img data-aos="fade-right" data-aos-duration="1000" src="assets/ewu-redesign.png" alt="EWU.EDU Redesign">
-                        </a>
-                        <a class="image" data-featherlight="assets/ewu-redesign.png" >
-                            <img data-aos="fade-right" data-aos-duration="1000" src="assets/ewu-vcd.jpg" alt="EWU.EDU Redesign">
-                        </a>
-                        <a class="image" data-featherlight="assets/ewu-redesign.png" >
-                            <img data-aos="fade-right" data-aos-duration="1000" src="assets/ewu-redesign.png" alt="EWU.EDU Redesign">
-                        </a>
-                        <a class="image" data-featherlight="assets/ewu-redesign.png" >
-                            <img data-aos="fade-right" data-aos-duration="1000" src="assets/ewu-redesign.png" alt="EWU.EDU Redesign">
-                        </a>
+                        <div class="image-wrap" data-featherlight="./assets/blinkux/blinkux-redesign-blog-index.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/blinkux/blinkux-redesign-blog-index.png"
+                                alt="">
+                        </div>
+                        <div class="image-wrap" data-featherlight="./assets/blinkux/blinkux-chrismas-2020.mp4">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/blinkux/blinkux-redesign-blog-post.png"
+                                alt="">
+                        </div>
+                        <div class="image-wrap" data-featherlight="./assets/blinkux/blinkux-redesign-home.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/blinkux/blinkux-redesign-home.png"
+                                alt="">
+                        </div>
+                        <div class="image-wrap" data-featherlight="./assets/blinkux/blinkux-redesign-work.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/blinkux/blinkux-redesign-work.png"
+                                alt="">
+                        </div>
                     </section>
                 </div>
-                
+
+                <div class="description">
+                    <h4>BlinkUX</h4>
+                    <p>Provided regular maintenance, content management assistance, and improvements to the client’s existing CraftCMS site. Additionally, I conducted all front-end development work for a full-site redesign, using designs provided by the client via Figma.</p>
+                    <div class="skills">
+                        <b>Focus</b>
+                        <ul>
+                            <li>Front-end Development</li>
+                            <li>Web Design</li>
+                            <li>Website Maintenance</li>
+                        </ul>
+                        <b>Tools + Software</b>
+                        <ul>
+                            <li>HTML + CSS</li>
+                            <li>Javascript + Vue</li>
+                            <li>PHP + CraftCMS</li>
+                            <li>GitHub</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="work-highlight">
+                <div>
+                    <div class="image-wrap" data-featherlight="./assets/ewu-redesign/ewu-redesign.png">
+                        <img data-aos="fade-in" data-aos-duration="1000" src="./assets/ewu-redesign/ewu-redesign.png"
+                            alt="EWU.EDU Redesign">
+                    </div>
+                    <section>
+                        <div class="image-wrap" data-featherlight="./assets/ewu-redesign/ewu-redesign.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/ewu-redesign/ewu-redesign.png"
+                                alt="EWU.EDU Redesign">
+                        </div>
+                        <div class="image-wrap" data-featherlight="./assets/ewu-redesign/ewu-redesign.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/ewu-redesign/ewu-redesign.png"
+                                alt="EWU.EDU Redesign">
+                        </div>
+                        <div class="image-wrap" data-featherlight="./assets/ewu-redesign/ewu-redesign.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/ewu-redesign/ewu-redesign.png"
+                                alt="EWU.EDU Redesign">
+                        </div>
+                    </section>
+                </div>
+
                 <div class="description">
                     <h4>EWU.EDU Redesign Project</h4>
-                    <p>For the 2018 EWU site redesign, I assisted in carrying out design and code maintenance on the front-end and back-end of the Wordpress theme. Additionally, I've conducted mateinence and support in terms of browser testing, accessibility, and performance.</p>
+                    <p>For the 2018 EWU site redesign, I assisted in carrying out design and code maintenance on the
+                        front-end and back-end of the Wordpress theme. Additionally, I've conducted mateinence and
+                        support in terms of browser testing, accessibility, and performance.</p>
                     <div class="skills">
                         <b>Skills Demonstrated</b>
                         <ul>
@@ -105,35 +163,55 @@
             </article>
 
             <article class="work-highlight">
-                <a class="image" data-featherlight="assets/ewu-vcd.jpg">
-                    <img data-aos="fade-left"  data-aos-duration="1000" src="assets/ewu-vcd.jpg" alt="EWU VCD Site Redesign">
-                </a>
-                
+                <div>
+                    <div class="image-wrap" data-featherlight="./assets/ewu-vcd/ewu-vcd.jpg">
+                        <img data-aos="fade-in" data-aos-duration="1000" src="./assets/ewu-vcd/ewu-vcd.jpg"
+                            alt="EWU VCD Site Redesign">
+                    </div>
+                    <section>
+                        <div data-featherlight="./assets/ewu-vcd/vcd.png" class="image-wrap"><img src="./assets/ewu-vcd/vcd.png" alt=""></div>
+                        <div data-featherlight="./assets/ewu-vcd/vcd-contact.png" class="image-wrap"><img src="./assets/ewu-vcd/vcd-contact.png" alt=""></div>
+                        <div data-featherlight="./assets/ewu-vcd/vcd-mobile.png" class="image-wrap"><img src="./assets/ewu-vcd/vcd-mobile.png" alt=""></div>
+                    </section>
+                </div>
 
                 <div class="description">
                     <h4>EWU VCD Site Redesign</h4>
-                    <p>The final for my UX1 course at EWU. This redesign of the Visual Communication Design program site is the result of the processes learned throughout the quarter. These processes include wireframing, layout, and protoyping low and high fidelity designs.</p>
-                    <p><a href="https://invis.io/SNOZ3QUQWR2">View Wireframe Prototype</a></p>
-                    <p><a href="https://invis.io/54OZ3YVPQZV">View V1 Prototype</a></p>
-                    
+                    <p>The final for my UX1 course at EWU. This redesign of the Visual Communication Design program site
+                        is the result of the processes learned throughout the quarter. These processes include SWOT analysis,
+                        wireframing, research, and ultimately protoyping low and high fidelity designs.</p>
+                    <ul class="list-style-none">
+                        <li>
+                            <a href="https://invis.io/SNOZ3QUQWR2" target="_blank">
+                                <i class="fab fa-invision"></i>View Wireframe Prototype</a>
+                        </li>
+                        <li>
+                            <a href="https://invis.io/54OZ3YVPQZV" target="_blank">
+                                <i class="fab fa-invision"></i>View V1 Prototype</a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@chadohl/vcd-new-and-improved-6d9894ed2f29" target="_blank">
+                                <i class="fa fa-medium"></i>Read UX Breakdown</a>
+                        </li>
+                    </ul>
                 </div>
             </article>
 
-            <!-- <article class="work-highlight">
-                    <div class="image">
-                        <img data-aos="fade-right"  data-aos-duration="1000" src="assets/trails.jpg" alt="Trails App Login">
+            <article class="work-highlight">
+                    <div class="image-wrap">
+                        <img data-aos="fade-in"  data-aos-duration="1000" src="./assets/trails/trails.jpg" alt="Trails App Login">
                     </div>
                     
     
                     <div class="description">
                         <h4>Trails App Login</h4>
-                        <p>This is another project from my UX1 course where we learned wireframing and user flows through the design of a app login screen.</p>
-                        <button href="#" data-featherlight="assets/trails.jpg">View</button>
+                        <p>The Trails hiking trail and route sharing application is a fictional concept for a web application that I built to learn the process of determining user flows. A project from my UX1 course where we learned wireframing and userflows through the design of an app login screen.</p>
+                        
                     </div>
-            </article> -->
-    
+            </article> 
+
             <!-- <article class="work-highlight">
-                <div class="image">
+                <div class="image-wrap">
                     <img data-aos="fade-left" data-aos-duration="1000" src="assets/joerogan.jpg" alt="Joe Rogan Posterization">
                 </div>
                 
@@ -146,8 +224,8 @@
             </article> -->
 
             <!-- <article class="work-highlight">
-                <div class="image">
-                    <img data-aos="fade-right" data-aos-duration="1000" src="assets/fma-r.jpg" alt="FMA-R">
+                <div class="image-wrap">
+                    <img data-aos="fade-in" data-aos-duration="1000" src="assets/fma-r.jpg" alt="FMA-R">
                 </div>
                 
 
@@ -157,30 +235,39 @@
                     <button href="#" data-featherlight="assets/fma-r.jpg">View</button>
                 </div>
             </article> -->
-            
+
             <article class="work-highlight">
-                <div data-aos="fade-left">
-                    <a class="image" data-featherlight="assets/codeinthedark/1a-example.png">
-                        <img data-aos-duration="1000" src="assets/codeinthedark/1a-example.png" alt="Code in the Dark">
-                    </a>
+                <div>
+                    <div class="image-wrap" data-featherlight="./assets/codeinthedarkcodeinthedark-spokane.png">
+                        <img data-aos="fade-in" data-aos-duration="1000" src="./assets/codeinthedark/codeinthedark-spokane.png"
+                            alt="Code in the Dark">
+                    </div>
                     <section>
-                        <a href="" class="image" data-featherlight="assets/codeinthedark/1b-example.png">
-                            <img data-aos-duration="1000" src="assets/codeinthedark/1b-example.png" alt="Code in the Dark">
-                        </a>
-                        <a href="" class="image" data-featherlight="assets/codeinthedark/1c-example.png">
-                            <img data-aos-duration="1000" src="assets/codeinthedark/1c-example.png" alt="Code in the Dark">
-                        </a>
-                        <a href="" class="image" data-featherlight="assets/codeinthedark/2-example.png">
-                            <img data-aos-duration="1000" src="assets/codeinthedark/2-example.png" alt="Code in the Dark">
-                        </a>
+                        <div class="image-wrap" data-featherlight="./assets/codeinthedark/1a-example.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/codeinthedark/1a-example.png"
+                                alt="Code in the Dark">
+                        </div>
+                        <div href="" class="image-wrap" data-featherlight="./assets/codeinthedark/1b-example.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/codeinthedark/1b-example.png"
+                                alt="Code in the Dark">
+                        </div>
+                        <div href="" class="image-wrap" data-featherlight="./assets/codeinthedark/1c-example.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/codeinthedark/1c-example.png"
+                                alt="Code in the Dark">
+                        </div>
+                        <div href="" class="image-wrap" data-featherlight="./assets/codeinthedark/2-example.png">
+                            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/codeinthedark/2-example.png"
+                                alt="Code in the Dark">
+                        </div>
                     </section>
                 </div>
-                
 
-                <div class="description"  data-aos="fade-left">
+
+                <div class="description" data-aos="fade-in">
                     <h4>Code in the Dark Spokane 2019</h4>
-                    <p>Brainstormed with peers to design the official theme of the 2019 CiTD front-end coding challenges. Sketched, iterated, and designed final coding challenges for CiTD event. Assisted in setup, and coordination of CiTD frontend coding contest.</p>
-                    <p><a href="https://codeinthedarkspokane.com/">Official Code in the Dark Spokane website</a></p>
+                    <p>Brainstormed with peers to design the official theme of the 2019 CiTD front-end coding
+                        challenges. Sketched, iterated, and designed final coding challenges for CiTD event. Assisted in
+                        setup, and coordination of CiTD frontend coding contest.</p>
                     <div class="skills">
                         <b>Skills Demonstrated</b>
                         <ul>
@@ -199,16 +286,64 @@
                 </div>
             </article>
 
-            <article id="code">
-                <h4 class="text-center">Code Samples</h4>
+            <article id="links">
+                <h4 id="code" class="text-center">Code Samples</h4>
+                <div>
+                    <ul>
+                        <li><a href="https://github.com/chadlol/character-fight"><i class="fa fa-github"></i>Character
+                                Fighting Game, Ruby</a></li>
+                        <li><a href="https://github.com/chadlol/chadlol.github.io"><i class="fa fa-github"></i>Personal
+                                Portfolio Website</a></li>
+                        <li><a href="https://codepen.io/chadlol/pen/MRpRmy"><i class="fa fa-codepen"></i>REST API
+                                Example, Javascript</a></li>
+                        <li><a href="https://github.com/chadlol/ruby-maze-final/blob/master/maze_ohl.rb"><i
+                                    class="fa fa-github"></i>ASCII Maze Solver [CS Course Final], Ruby</a></li>
+                        <li><a href="https://github.com/chadlol/the-matrix-trailer-framework"><i
+                                    class="fa fa-github"></i>The Matrix Fictional Promotional Website</a></li>
+                    </ul>
 
-                <ul class="code-links">
-                    <li><i class="fa fa-github"></i><a href="https://github.com/chadlol/character-fight">Character Fighting Game, Ruby</a></li>
-                    <li><i class="fa fa-github"></i><a href="https://github.com/chadlol/chadlol.github.io">Personal Portfolio Website</a></li>
-                    <li><i class="fa fa-codepen"></i><a href="https://codepen.io/chadlol/pen/MRpRmy">REST API Example, Javascript</a></li>
-                    <li><i class="fa fa-github"></i><a href="https://github.com/chadlol/ruby-maze-final/blob/master/maze_ohl.rb">ASCII Maze Solver [CS Course Final], Ruby</a></li>
-                    <li><i class="fa fa-github"></i><a href="https://github.com/chadlol/the-matrix-trailer-framework">The Matrix Fictional Promotional Website</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="https://github.com/chadlol/character-fight"><i class="fa fa-github"></i>Character
+                                Fighting Game, Ruby</a></li>
+                        <li><a href="https://github.com/chadlol/chadlol.github.io"><i class="fa fa-github"></i>Personal
+                                Portfolio Website</a></li>
+                        <li><a href="https://codepen.io/chadlol/pen/MRpRmy"><i class="fa fa-codepen"></i>REST API
+                                Example, Javascript</a></li>
+                        <li><a href="https://github.com/chadlol/ruby-maze-final/blob/master/maze_ohl.rb"><i
+                                    class="fa fa-github"></i>ASCII Maze Solver [CS Course Final], Ruby</a></li>
+                        <li><a href="https://github.com/chadlol/the-matrix-trailer-framework"><i
+                                    class="fa fa-github"></i>The Matrix Fictional Promotional Website</a></li>
+                    </ul>
+                </div>
+
+                <h4 id="ux" class="text-center">UX Processes + Other writtings</h4>
+                <div>
+                    <ul>
+                        <li><a href="https://medium.com/@chadohl/vcd-new-and-improved-6d9894ed2f29"><i
+                                    class="fa fa-medium"></i>Designing a Login, UX</a></li>
+                        <li><a href="https://medium.com/@chadohl/snapchat-pain-points-705eae217262"><i
+                                    class="fa fa-medium"></i>Snapchat Pain Points, UX</a></li>
+                        <li><a href="https://medium.com/@chadohl/design-audit-6946796877ca"><i
+                                    class="fa fa-medium"></i>Backpack Items, UX Design Audit #1</a></li>
+                        <li><a href="https://medium.com/@chadohl/ux-design-audit-2-46a79eb75db0"><i
+                                    class="fa fa-medium"></i>Apartment, UX Design Audit #2</a></li>
+                        <li><a href="https://medium.com/@chadohl/ux-design-audit-3-9e49378edb24"><i
+                                    class="fa fa-medium"></i>EWU Campus, UX Design Audit #3</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="https://medium.com/@chadohl/xr-eval-1-super-hot-4aa576cc15f5"><i
+                                    class="fa fa-medium"></i>XR Eval #1 | Super Hot</a></li>
+                        <li><a href="https://medium.com/@chadohl/xr-eval-2-kingspray-graffiti-a7e35eda5945"><i
+                                    class="fa fa-medium"></i>XR Eval #2 | Kingspray Graffiti</a></li>
+                        <li><a href="https://medium.com/@chadohl/defining-a-composition-160049000737"><i
+                                    class="fa fa-medium"></i>Defining a Composition, Photography</a></li>
+                        <li><a href="https://medium.com/@chadohl/the-essence-of-a-camera-d2ea11688d67"><i
+                                    class="fa fa-medium"></i>The Essence of a Camera, Photography</a></li>
+                        <li><a href="https://medium.com/@chadohl/analyzing-histograms-fc2c4dfeda93"><i
+                                    class="fa fa-medium"></i>Analyzing Histograms, Photography</a></li>
+                    </ul>
+                </div>
             </article>
         </section>
 
@@ -216,27 +351,25 @@
             <h4 class="text-center">Art + Design</h4>
 
             <article>
-                <img src="./assets/killer-penguin.png" alt="My Doodle Art :)">
-                <img src="./assets/ohlChad-DiversityPoster-1920x1080.jpg" alt="">
-                <img src="./assets/life.png" alt="">
-                <img src="./assets/doodle-wide.png" alt="My Doodle Art :)">
-                <div><img src="./assets/doodle-1.jpg" alt=""></div>
-                <div><img src="./assets/theking.jpg" alt=""></div>
-                <div><img src="./assets/final-farm.jpg" alt="My Doodle Art :)"></div>
-                <div><img src="./assets/katana.jpg" alt=""></div>
-                <div><img src="./assets/Arturia-MLMk2-2.jpg" alt=""></div>
-                <div><img src="./assets/Arturia-MLMk2-WF3.png" alt=""></div>
+                <div><img src="./assets/art-design/beachlife.png" alt=""></div>
+                <div><img src="./assets/art-design/play-final.png" alt=""></div>
+                <div><img src="./assets/art-design/SNAPS-logo-2-14.jpg" alt=""></div>
+                <div><img src="./assets/art-design/community-action-month.png" alt=""></div>
+                <div><img src="./assets/art-design/final-farm.jpg" alt="My Doodle Art :)"></div>
+                <div><img src="./assets/art-design/katana.jpg" alt=""></div>
+                <div><img src="./assets/art-design/Arturia-MLMk2-2.jpg" alt=""></div>
+                <div><img src="./assets/art-design/Arturia-MLMk2-WF3.png" alt=""></div>
                 <video autoplay loop>
 
-                    <source src="assets/computer-mouse.mp4"
-                    type="video/mp4">
-                
+                    <source src="./assets/art-design/computer-mouse.mp4" type="video/mp4">
+
                     Sorry, your browser doesn't support embedded videos.
                 </video>
-                <div><img src="./assets/beachlife.png" alt=""></div>
-                <div><img src="./assets/play-final.png" alt=""></div>
-                <div><img src="./assets/SNAPS-logo-2-14.jpg" alt=""></div>
-                <div><img src="./assets/community-action-month.png" alt=""></div>
+                <img src="./assets/art-design/killer-penguin.png" alt="My Doodle Art :)">
+                <img src="./assets/art-design/ohlChad-DiversityPoster-1920x1080.jpg" alt="">
+                <img src="./assets/art-design/doodle-wide.png" alt="My Doodle Art :)">
+                <div><img src="./assets/art-design/doodle-1.jpg" alt=""></div>
+                <div><img src="./assets/art-design/theking.jpg" alt=""></div>
                 <!-- <div><img src="./assets/play-sketch.jpg" alt=""></div> -->
             </article>
         </section>
@@ -246,21 +379,47 @@
             <h2 class="text-center">About</h2>
 
             <article class="chad-ohl">
-                
+
                 <div class="copy">
                     <h4>Hi, I'm Chad Ohl</h4>
                     <p>
-                        I am a web designer and developer with over five years of diverse experience. I have a solid foundation in software, web, ux, and design that I’ve gathered from completing degrees in both Design and Software Development. I have an optimistic attitude and flourish in environments that encourage collaboration, communication, and teamwork.
+                        I am a web designer and developer with over five years of diverse experience. I have a solid
+                        foundation in software, web, ux, and design that I’ve gathered from completing degrees in both
+                        Design and Software Development. I have an optimistic attitude and flourish in environments that
+                        encourage collaboration, communication, and teamwork.
                     </p>
                     <p>
-                        In addition to my professional skills, I enjoy art and illustration, gaming, and of course, coffee ☕.
+                        In addition to my professional skills, I enjoy art and illustration, gaming, and of course,
+                        coffee ☕.
                     </p>
-                    <h4>Languages</h4>
-                    <ul></ul>
                 </div>
-
                 <div class="portrait">
                     <img data-aos="fade-in" data-aos-duration="1000" src="assets/chadohl.jpg" alt="Chad Ohl">
+                </div>
+                <div class="copy-full">
+                    <h4>Languages</h4>
+                    <h5>HTML/CSS</h5>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Foundation</li>
+                        <li>SASS/SCSS</li>
+                        <li>Flexbox/Grid</li>
+                    </ul>
+                    <h5>Javascript</h5>
+                    <ul>
+                        <li>GreenSock</li>
+                        <li>Gulp</li>
+                        <li>jQuery</li>
+                        <li>NPM</li>
+                    </ul>
+                    <ul>
+                        <li>PHP</li>
+                        <li>CraftCMS</li>
+                        <li>Wordpress</li>
+                    </ul>
+                    <h5>Ruby</h5>
+                    <h5>C#</h5>
+                    <h5>SQL</h5>
                 </div>
 
             </article>
@@ -271,36 +430,104 @@
             <h2 class="text-center">Contact</h2>
             <div class="sub-header text-center">Fill out the fields below and I’ll get back to you ASAP.</div>
 
-            <form action="https://formspree.io/chadohl@gmail.com" method="POST">
+            <form action="https://getform.io/f/6b2e43c5-dfb7-4b37-879d-ab43c8226a51" method="POST">
                 <input placeholder="Name" type="text" name="name">
-                <input placeholder="Email" type="email" name="_replyto">
+                <input placeholder="Email" type="email" name="email">
                 <textarea placeholder="Message" name="message" cols="30" rows="10"></textarea>
                 <input type="submit" value="Send">
-              </form>
+            </form>
 
         </section>
     </main>
 
     <footer class="text-center">
-        <a href="#header" class="">
+        <a href="#" class="">
             <i class="fa fa-chevron-up"></i>
         </a>
 
-            <div class="social-links">
-                <a href="https://github.com/chadlol"><i class="fa fa-github"></i></a>
-                <a href="https://gitlab.com/chadlol"><i class="fa fa-gitlab"></i></a>
-                <a href="https://dribbble.com/chadL0L"><i class="fa fa-dribbble"></i></a>
-                <a href="https://www.instagram.com/ohl_lines/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCwlKI1VeP5or1aYe8aOqxTg"><i class="fa fa-youtube"></i></a>
-            </div>
+        <div class="social-links">
+            <a href="https://github.com/chadlol"><i class="fa fa-github"></i></a>
+            <a href="https://gitlab.com/chadlol"><i class="fa fa-gitlab"></i></a>
+            <a href="https://dribbble.com/chadL0L"><i class="fa fa-dribbble"></i></a>
+            <a href="https://www.instagram.com/ohl_lines/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCwlKI1VeP5or1aYe8aOqxTg"><i class="fa fa-youtube"></i></a>
+        </div>
 
-            <h6>© 2021 Chad Ohl</h6>
+        <h6>© 2021 Chad Ohl</h6>
         </a>
     </footer>
 
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+            It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
     <script src="//code.jquery.com/jquery-latest.js"></script>
-    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript"
+        charset="utf-8"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -309,7 +536,8 @@
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
-    
+
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

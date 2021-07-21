@@ -2,19 +2,20 @@
 
     .chad-ohl {
         display: flex;
-        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        flex-direction: column;
         padding-top: 3.125rem;
 
-        h2 {
-            text-transform: capitalize;
-            margin-top: 1rem;
+        h4 {
+            margin-bottom: 0.5rem;
         }
 
         p {
             padding: 1rem 0;
         }
 
-        .copy {
+        .copy,
+        .copy-full {
             width: 100%;
         }
 
@@ -25,6 +26,21 @@
             img {
                 width: 100%;
                 margin-bottom: 1rem;
+            }
+        }
+
+        ul {
+            li {
+                font-size: 0.75rem;
+                margin-left: 2em;
+                // text-indent: -1em;
+                // list-style-type: none;
+            }
+        
+            .b {
+                font-size: initial;
+                font-weight: bold;
+                margin-left: 1rem;
             }
         }
 

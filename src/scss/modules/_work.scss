@@ -7,7 +7,7 @@
 
 
         @media screen and (min-width: 992px) {
-            padding: 6.25rem 0;
+            padding: 3.25rem 0;
             flex-direction: row;
 
             &:last-of-type {padding-bottom: 0}
@@ -22,14 +22,20 @@
             }
         }
 
-        .image {
+        .image-wrap {
             display: inline-block;
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
+                object-position: center top;
             }
 
+        }
+
+        section .image-wrap {
+            height: 6rem;
+            width: 6rem;
         }
 
         div {
@@ -38,24 +44,29 @@
         
         section {
             display:flex;
-            min-height: 10rem;
+            // min-height: 10rem;
 
-            .image {
+            .image-wrap {
                 padding: 0.5rem;
+                opacity: 0.5;
+                transition: opacity 0.25s ease;
             }
 
-            .image:first-of-type {
+            .image-wrap:first-of-type {
                 padding-left: 0;
             }
 
-            .image:last-of-type {
+            .image-wrap:last-of-type {
                 padding-right: 0;
             }
-
+            
+            .image-wrap:hover {
+                opacity: 1;
+            }
 
         }
 
-        a.image {
+        .image-wrap {
             cursor: pointer;
         }
 
@@ -74,10 +85,18 @@
                 margin-bottom: 1rem;
             }
 
+            a {
+                display: inline-block;
+                // width: 100%;
+            }
+
             .skills {
                 padding: 1rem 0;
             }
 
+            ul {
+                text-align: left;
+            }
 
             li
             {
@@ -95,7 +114,7 @@
                 text-align: left;
 
                 div {
-                    width: 50%;
+                    // width: 50%;
                 }
 
                 h4 {
@@ -105,6 +124,60 @@
                 button { 
                     text-align: left;
                 }
+            }
+        }
+    }
+
+    #links {
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            width: 100%;
+            list-style-type: none;
+            margin-bottom: 2.25rem;
+            // font-size: 0.75rem;
+        }
+
+
+    
+        h4 {
+            width: 100%;
+            margin: 2rem 0;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+    }
+
+    a,
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    a > i {
+        padding: 0 0.5rem;
+    }
+
+    @media screen and (min-width: 992px) { 
+        #links {
+            
+            ul {
+                width: 50%;
+                // font-size: 1rem;
+            }
+
+            // li {
+
+            //     text-indent: -1em;
+            // }
+            
+            &:last-child {
+                // padding-left: 2rem;
             }
         }
     }

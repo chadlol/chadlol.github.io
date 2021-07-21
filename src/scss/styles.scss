@@ -1,8 +1,9 @@
 
 // Vendor
-@import 'vendor/featherlight';
+// @import 'vendor/featherlight';
 
 // Base
+@import 'base/helper';
 @import 'base/structure';
 @import 'base/fonts';
 @import 'base/typography';
@@ -14,7 +15,6 @@
 @import 'modules/work-social';
 @import 'modules/art';
 @import 'modules/about';
-@import 'modules/code';
 @import 'modules/contact';
 @import 'modules/footer';
 
@@ -24,3 +24,7 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+// Photoswipe
+@import "../../node_modules/photoswipe/dist/photoswipe.css";
+@import "../../node_modules/photoswipe/dist/default-skin/default-skin.css";
