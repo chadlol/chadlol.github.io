@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900");
-@import url(../../node_modules/photoswipe/dist/photoswipe.css);
-@import url(../../node_modules/photoswipe/dist/default-skin/default-skin.css);
 .text-center {
   text-align: center; }
 
@@ -158,7 +156,7 @@ nav {
   background: white;
   position: sticky;
   top: 0;
-  z-index: 9999; }
+  z-index: 999; }
   nav ul {
     list-style-type: none; }
   nav .main-nav {
@@ -199,7 +197,7 @@ nav {
     opacity: 0.5;
     font-size: 4rem;
     transition: all 0.25s ease;
-    z-index: 9999; }
+    z-index: 999; }
     nav .navbar-toggle:hover {
       opacity: 1;
       cursor: pointer; }
