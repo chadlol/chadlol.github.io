@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
+const image = require('gulp-image');
+const cleanCSS = require('gulp-clean-css');
 
 gulp.task('html', function(){
     return gulp.src('src/*.html')
@@ -17,15 +19,16 @@ gulp.task('fonts', function(){
 });
 
 gulp.task('assets', function(){
-  return gulp.src('src/assets/**/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./assets'))
+  return gulp.src('./assets/**/*')
+    .pipe(image())
+    .pipe(gulp.dest('./assets-minified'))
     
 });
 
 gulp.task('sass', function(){
     return gulp.src('src/scss/styles.scss')
       .pipe(sass()) // Using gulp-sass
+      .pipe(cleanCSS({compatibility: 'ie8'}))
       .pipe(gulp.dest('./css'))
       .pipe(browserSync.reload({
         stream: true
@@ -60,6 +63,6 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('src/**/*.js', ['js']); 
 });
 
-gulp.task('dev', [ 'html', 'js', 'assets', 'fonts', 'icons', 'watch']);
+gulp.task('dev', [ 'html', 'js', 'fonts', 'icons', 'watch']);
 
-gulp.task('default', [ 'html', 'sass', 'js', 'assets', 'fonts', 'icons' ]);
+gulp.task('default', [ 'html', 'sass', 'js', 'fonts', 'icons' ]);

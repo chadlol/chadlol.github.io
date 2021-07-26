@@ -19,9 +19,13 @@
         // border: solid 1px black;
     }
 
+    video {
+        margin-bottom: 3rem;
+    }
+
 
     div {
-        padding-bottom: 3rem;
+        margin-bottom: 3rem;
         width: 100%; 
         height: auto;
 
@@ -32,6 +36,50 @@
         @media screen and (min-width: 1200px) {
             width: calc(50% - 1.75rem); 
             // min-width: 480px;
+        }
+
+        a {
+            height: 100%;
+        }
+    }
+
+    a {
+        position: relative;
+        transform: scale(1);
+        transition: all 0.15s ease;
+        display: inline-block;
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            transform: scale(1.025);
+
+            i {
+                filter: invert(1);
+                opacity: 1;
+            }
+        }
+
+        i {
+            color: #FFF;
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            opacity: 0.5;
+            transition: all 0.15s ease;
+
+            &::before {
+                content: "\f302";
+                height:2rem;
+                width: 2rem;
+                background-color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+            }
         }
     }
 }

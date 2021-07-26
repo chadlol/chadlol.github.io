@@ -3,11 +3,11 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 3.125rem 0;
+        padding: 6rem 0;
 
 
         @media screen and (min-width: 992px) {
-            padding: 3.25rem 0;
+            padding: 8rem 0;
             flex-direction: row;
 
             &:last-of-type {padding-bottom: 0}
@@ -24,9 +24,13 @@
 
         .image-wrap {
             display: inline-block;
+            width: 100%;
+            height: 100%;
             img {
                 width: 100%;
                 height: 100%;
+                max-height: 512px;
+                overflow: hidden;
                 object-fit: cover;
                 object-position: center top;
             }
@@ -44,12 +48,22 @@
         
         section {
             display:flex;
-            // min-height: 10rem;
+            flex-wrap: wrap;
+            // justify-content: space-between;
 
             .image-wrap {
-                padding: 0.5rem;
+                margin: 0.5rem 0.5rem 0.5rem 0;
                 opacity: 0.5;
                 transition: opacity 0.25s ease;
+                border: solid 2px #000;
+
+                 &::after {
+                    display: none;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
             }
 
             .image-wrap:first-of-type {
@@ -66,14 +80,14 @@
 
         }
 
-        .image-wrap {
-            cursor: pointer;
-        }
+        // .image-wrap {
+        //     cursor: pointer;
+        // }
 
 
 
         .description {
-            text-align: center;
+            // text-align: center;
 
             h4 {
                 margin: 1rem 0;
@@ -92,6 +106,10 @@
 
             .skills {
                 padding: 1rem 0;
+                display: flex;
+                // justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 1rem;
             }
 
             ul {
@@ -133,10 +151,11 @@
         div {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-around;
         }
 
         ul {
-            width: 100%;
+            // width: 100%;
             list-style-type: none;
             margin-bottom: 2.25rem;
             // font-size: 0.75rem;
@@ -167,7 +186,7 @@
         #links {
             
             ul {
-                width: 50%;
+                // width: 50%;
                 // font-size: 1rem;
             }
 

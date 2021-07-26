@@ -15,7 +15,11 @@ footer {
 }
 
 main {
-    padding: 0 16.6667%;
+    padding: 0 1rem;
+
+    @media screen and (min-width: 480px) {
+        padding: 0 16.6667%;
+    }
 }
 
 .container {
@@ -48,7 +52,6 @@ input[type=submit] {
     margin: 1rem 0;
     border: solid 2px #000;
     transition: all 0.15s ease;
-    // cursor: pointer;
     
     &:hover {
         color: #FFF;

@@ -1,3 +1,5 @@
 /node_modules
 ./*.html
 assets/*
+assets-minified.7z
+assets.7z

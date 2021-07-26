@@ -7,6 +7,13 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 
+    margin-top: 6rem;
+
+    @media screen and (min-width: 768px) {
+        // height: 65vh;
+        margin-top: 0;
+    }
+
     &::before,
     &::after {
         content: '';
