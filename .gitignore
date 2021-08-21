@@ -3,3 +3,5 @@
 assets/*
 assets-minified.7z
 assets.7z
+/p
+.DS_Store
